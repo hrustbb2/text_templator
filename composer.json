@@ -1,0 +1,13 @@
+{
+    "name": "rust/tree_txt",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "hrustbb2\\StrTemplateCompiler\\": "src/",
+            "Tests\\": "tests/"
+        }
+    }
+}

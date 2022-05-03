@@ -49,7 +49,8 @@ class Text {
         if($this->prevNode){
             $result = ' ' . $result;
         }
-        if($this->prevNode && mb_substr($result, 1, 1) == ')'){
+        $firstChar = mb_substr($result, 1, 1);
+        if($this->prevNode && in_array($firstChar, [')', ','])){
             return $result;
         }
         return $result;
